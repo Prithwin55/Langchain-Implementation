@@ -1,0 +1,19 @@
+2 Types:
+    -with_structured_output("for llm capable of structed op")
+    -output_parsers("for llm not capable of structured op)
+
+-> with_structured_output:
+    -Typed_dict
+    -Pydantic
+    -json_schema
+
+--------------- Typed Dictionary ---------------
+
+->>     from typing import TypedDict
+
+        class Person(TypedDict):
+            name:str
+            age:int
+
+        person=Person(name="raj",age=34)
+        print(person)
